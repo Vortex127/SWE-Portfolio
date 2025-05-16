@@ -56,11 +56,11 @@
   }
 
   .glass-panel {
-    @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)];
+    @apply backdrop-blur-xl bg-white/5 border border-white/10 shadow-[0_4px_12px_-2px_rgba(0,0,0,0.3)] transition-all duration-300;
   }
   
   .glass-card {
-    @apply backdrop-blur-lg bg-black/40 border border-white/10 rounded-lg;
+    @apply backdrop-blur-lg bg-black/40 border border-white/10 rounded-lg transition-all duration-300;
   }
   
   .text-gradient {
@@ -74,6 +74,36 @@
   .grid-pattern {
     background-image: radial-gradient(rgba(255, 255, 255, 0.05) 1px, transparent 1px);
     background-size: 20px 20px;
+  }
+  
+  .animate-float {
+    animation: float 10s ease-in-out infinite;
+  }
+  
+  .animate-pulse-slow {
+    animation: pulse 3s ease-in-out infinite;
+  }
+  
+  .animate-glow {
+    animation: glow 2s ease-in-out infinite alternate;
+  }
+  
+  @keyframes glow {
+    from {
+      box-shadow: 0 0 10px -10px rgba(156, 81, 252, 0.5);
+    }
+    to {
+      box-shadow: 0 0 20px 5px rgba(156, 81, 252, 0.3);
+    }
+  }
+  
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-20px);
+    }
   }
 }
 
@@ -93,4 +123,28 @@
 
 ::-webkit-scrollbar-thumb:hover {
   @apply bg-accent/70;
+}
+
+/* Card hover effects */
+.glass-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px -5px rgba(156, 81, 252, 0.2);
+}
+
+/* Animation for text reveals */
+@keyframes reveal-text {
+  from {
+    clip-path: inset(0 100% 0 0);
+  }
+  to {
+    clip-path: inset(0 0 0 0);
+  }
+}
+
+.reveal-text {
+  animation: reveal-text 0.8s cubic-bezier(0.77, 0, 0.175, 1) forwards;
 }
