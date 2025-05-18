@@ -412,14 +412,6 @@ const Skills = () => {
           </div>
 
           {/* Central hub - more minimal and ethereal */}
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-20 h-20 rounded-full bg-transparent backdrop-blur-sm border border-accent/20 flex items-center justify-center animate-pulse-slow z-20 ">
-            {/* Add subtle pulsing rings */}
-            <div className="absolute inset-0 rounded-full border border-accent/10 animate-ping-slow"></div>
-            <div
-              className="absolute -inset-4 rounded-full border border-accent/5 animate-ping-slow"
-              style={{ animationDelay: "0.5s" }}
-            ></div>
-          </div>
         </div>
       </div>
     </section>
