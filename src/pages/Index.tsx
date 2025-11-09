@@ -13,7 +13,7 @@ const Index = () => {
   
   useEffect(() => {
     // Update page title
-    document.title = "Alex Parker | Software Engineer";
+    document.title = "Mirza Asfandyar Baig | Software Engineer";
     
     // Fade in sections on scroll
     const observer = new IntersectionObserver(
