@@ -40,7 +40,7 @@ const Navbar = () => {
             className="text-2xl font-display font-bold text-gradient-purple"
             aria-label="Home"
           >
-            AP
+            AB
           </a>
 
           {/* Desktop Menu */}
