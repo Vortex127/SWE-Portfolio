@@ -2,19 +2,19 @@
 // Portfolio data
 
 export const personalInfo = {
-  name: "Alex Parker",
+  name: "Mirza Asfandyar Baig",
   title: "Software Engineer & Creative Developer",
   description: "I build exceptional digital experiences that live at the intersection of design and technology.",
-  email: "hello@alexparker.dev",
-  location: "San Francisco, CA",
-  github: "https://github.com",
-  linkedin: "https://linkedin.com",
+  email: "mirzasfand04@gmail.com",
+  location: "Karachi, Pakistan",
+  github: "https://github.com/Vortex127",
+  linkedin: "https://www.linkedin.com/in/mirza-asfandyar-baig-44abb6218/",
 };
 
 export const aboutData = [
   {
     title: "Background",
-    description: "With over 6 years of experience crafting digital solutions, I specialize in building performant web applications with modern technologies. My background in both design and engineering allows me to create experiences that are both visually striking and technically sound.",
+    description: "Crafting web and mobile based solutions since 2024, I specialize in building performant web applications with modern technologies. My background in both content writing and engineering allows me to create experiences that are both visually striking and technically sound.",
     icon: "code"
   },
   {
@@ -23,49 +23,36 @@ export const aboutData = [
     icon: "sparkles"
   },
   {
-    title: "Experience",
-    description: "I've worked with startups and enterprise organizations alike, helping to build everything from MVPs to large-scale applications. My experience spans various industries including fintech, education, and e-commerce.",
-    icon: "briefcase"
-  },
-  {
     title: "Interests",
-    description: "Beyond code, I'm an avid photographer, coffee enthusiast, and occasional rock climber. I enjoy exploring the intersection of technology and art, and often experiment with creative coding projects in my spare time.",
+    description: "Beyond code, I can be found writing poems, or reading a random book from my collection. I also ocassionaly like to cook.",
     icon: "heart"
   },
 ];
 
 export const projectsData = [
   {
-    title: "CommStack",
-    description: "A full-featured community platform built with React, Node.js, and GraphQL. Features real-time messaging, user authentication, and content moderation.",
-    technologies: ["React", "Node.js", "GraphQL", "MongoDB", "WebSockets"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    image: "/placeholder.svg"
+    title: "Cogni.ai",
+    description: "An AI-powered product that allows for lightning-fast summaries of complex articles and PDFs, effortless content analysis with key insights extracted instantly and a built-in forum for thought-provoking discussions",
+    technologies: ["React", "JavaScript", "Firebase", "Google Gemini", "Python", "Langchain", "Three.js"],
+    image: "/cogni.png"
   },
   {
-    title: "DataVizion",
-    description: "An interactive data visualization tool that transforms complex datasets into intuitive, interactive charts and graphs. Built with D3.js and React.",
-    technologies: ["React", "D3.js", "TypeScript", "Firebase"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    image: "/placeholder.svg"
+    title: "NexoCard",
+    description: "An AI-powered flashcard app to help students learn better with a built-in Yu-gi-oh inspired game (yes I love Yu-gi-oh). Also incorporated a helper chatbot and gamified leaderboard for extra fun.",
+    technologies: ["React", "JavaScript", "Three.js", "Google Gemini", "Firebase", "Python"],
+    image: "/nexocard.jpeg"
   },
   {
-    title: "MindfulAI",
-    description: "An AI-powered meditation app that personalizes meditation sessions based on user feedback and preferences. Uses machine learning to adapt to user needs.",
-    technologies: ["Python", "TensorFlow", "React Native", "AWS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    image: "/placeholder.svg"
+    title: "Healthify",
+    description: "A mobile application that allows for patients and doctors to connect virtually through appointments, chat, and video calls. It is a platform through which medical professionals can provides personalized health recommendations and community support for users to improve their well-being and self-care.",
+    technologies: ["React Native", "React", "JavaScript", "Stream", "Supabase"],
+    image: "/healthify.png"
   },
   {
-    title: "EcoTrack",
-    description: "A sustainability platform that helps users track and reduce their carbon footprint through personalized recommendations and community challenges.",
-    technologies: ["Vue.js", "Express", "PostgreSQL", "Tailwind CSS"],
-    githubUrl: "https://github.com",
-    liveUrl: "https://example.com",
-    image: "/placeholder.svg"
+    title: "FiestaCarts",
+    description: "Built this mobile app as my FYP (Final Year Project) with my team. It is a food-based app connecting customers to street food vendors with real-time GPS tracking, online ordering, and vendor ratings. Features interactive maps, payment processing, and community engagement for food festivals.",
+    technologies: ["React", "JavaScript", "React Native", "Express", "Node.js", "Cloudinary"],
+    image: "/fiestacarts.jpeg"
   },
 ];
 

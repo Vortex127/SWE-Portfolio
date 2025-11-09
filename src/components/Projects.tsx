@@ -9,10 +9,9 @@ import { motion, AnimatePresence } from "framer-motion"
 
 // Color schemes for project cards
 const colorSchemes = [
-  { accent: "#FF5E5B", gradient: "from-[#FF5E5B]/20 to-[#FF5E5B]/5" },
+  { accent: "#361A55", gradient: "from-[#361A55]/20 to-[#361A55]/5" },
   { accent: "#39A0ED", gradient: "from-[#39A0ED]/20 to-[#39A0ED]/5" },
   { accent: "#4ECB71", gradient: "from-[#4ECB71]/20 to-[#4ECB71]/5" },
-  { accent: "#FFC145", gradient: "from-[#FFC145]/20 to-[#FFC145]/5" },
   { accent: "#B967FF", gradient: "from-[#B967FF]/20 to-[#B967FF]/5" },
   { accent: "#FF6B6B", gradient: "from-[#FF6B6B]/20 to-[#FF6B6B]/5" },
   { accent: "#00C2A8", gradient: "from-[#00C2A8]/20 to-[#00C2A8]/5" },
@@ -427,16 +426,6 @@ const ProjectCard = ({ project, onClick, colorScheme, isListView }: ProjectCardP
           >
             <div className="flex gap-3">
               <a
-                href={project.githubUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-full hover:bg-white/20 transition-colors"
-                onClick={(e) => e.stopPropagation()}
-                style={{ backgroundColor: `${colorScheme.accent}22` }}
-              >
-                <Github className="w-4 h-4" />
-              </a>
-              <a
                 href={project.liveUrl}
                 target="_blank"
                 rel="noopener noreferrer"
@@ -558,17 +547,6 @@ const ProjectModal = ({ project, onClose }: ProjectModalProps) => {
             transition={{ duration: 0.5, delay: 0.4 }}
             className="flex flex-wrap gap-4"
           >
-            <motion.a
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              href={project.githubUrl}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="flex items-center gap-2 px-5 py-2 border border-white/20 rounded-full text-sm hover:bg-white/10 transition-colors"
-            >
-              <Github className="w-4 h-4" />
-              View Code
-            </motion.a>
             <motion.a
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
